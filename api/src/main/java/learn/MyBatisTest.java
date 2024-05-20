@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.util.List;
-import learn.user.domain.model.User;
+import learn.api.user.domain.model.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -21,9 +21,9 @@ public class MyBatisTest {
 
             try (SqlSession sqlSession = sqlSessionFactory.openSession()) {
                 User user = new User("호랑나비", 137);
-                sqlSession.insert("learn.user.domain.repository.UserMapper.insert", user);
+                sqlSession.insert("learn.api.user.domain.repository.UserMapper.insert", user);
 
-                List<Object> list = sqlSession.selectList("learn.user.domain.repository.UserMapper.selectAll");
+                List<User> list = sqlSession.selectList("learn.user.domain.repository.UserMapper.selectAll");
                 System.out.println(list);
             }
         } catch (IOException e) {
