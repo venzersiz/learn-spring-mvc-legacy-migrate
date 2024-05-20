@@ -1,17 +1,25 @@
 package learn.api.user.domain.repository;
 
-import org.springframework.dao.support.DaoSupport;
+import java.util.List;
+import learn.api.user.domain.model.User;
+import lombok.RequiredArgsConstructor;
+import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserDao extends DaoSupport {
+@RequiredArgsConstructor
+public class UserDao {
 
-    @Override
-    protected void initDao() throws Exception {
-        super.initDao();
+    private final SqlSession sqlSession;
+
+    public User insert(User user) {
+
+        sqlSession.insert("learn.api.user.domain.repository.UserMapper.insert", user);
+
+        return user;
     }
 
-    @Override
-    protected void checkDaoConfig() throws IllegalArgumentException {
+    public List<User> selectAll() {
+        return sqlSession.selectList("learn.api.user.domain.repository.UserMapper.selectAll");
     }
 }

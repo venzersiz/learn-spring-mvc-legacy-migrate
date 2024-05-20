@@ -16,4 +16,5 @@
 <!--  </bean>-->
 
   <import resource="properties.xml" />
+  <import resource="persistenceContext.xml" />
 </beans>

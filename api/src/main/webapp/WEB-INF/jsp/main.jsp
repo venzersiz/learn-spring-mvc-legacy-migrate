@@ -6,5 +6,6 @@
 </head>
 <body>
     <h1>안녕하세요</h1>
+    <p>${user}</p>
 </body>
 </html>
