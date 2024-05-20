@@ -14,4 +14,6 @@
 <!--    <property name="prettyPrint" value="true" />-->
 <!--    <property name="supportedMediaTypes" value="application/json;charset=UTF-8" />-->
 <!--  </bean>-->
+
+  <import resource="properties.xml" />
 </beans>
