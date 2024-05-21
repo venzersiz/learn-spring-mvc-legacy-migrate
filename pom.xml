@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>learn</groupId>
-  <artifactId>learn-spring-mvc-legacy</artifactId>
+  <artifactId>learn-spring-mvc-legacy-migrate</artifactId>
   <version>0.1</version>
   <packaging>pom</packaging>
 

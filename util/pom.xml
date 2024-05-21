@@ -5,7 +5,7 @@
 
   <parent>
     <groupId>learn</groupId>
-    <artifactId>learn-spring-mvc-legacy</artifactId>
+    <artifactId>learn-spring-mvc-legacy-migrate</artifactId>
     <version>0.1</version>
   </parent>
 
