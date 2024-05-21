@@ -5,6 +5,7 @@ import learn.api.user.domain.model.User;
 import learn.api.user.domain.repository.UserDao;
 import learn.api.user.domain.repository.UserMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 @RequiredArgsConstructor
 public class MainController {
+
+    private final Environment env;
 
     private final UserDao userDao;
 
@@ -28,6 +31,7 @@ public class MainController {
         }
 
         model.addAttribute("user", users.get(0));
+        model.addAttribute("appEnv", env.getProperty("app.env"));
         return "main";
     }
 }

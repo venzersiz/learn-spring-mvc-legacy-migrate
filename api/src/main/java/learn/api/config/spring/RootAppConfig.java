@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ComponentScan(basePackages = "learn.api.user", excludeFilters = @Filter(org.springframework.stereotype.Controller.class))
-@ImportResource(locations = {"/WEB-INF/spring/properties.xml", "/WEB-INF/spring/persistenceContext.xml"})
+@ImportResource(locations = {"/WEB-INF/spring/persistenceContext.xml"})
 public class RootAppConfig {
 
 }

@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1>안녕하세요</h1>
-    <p>${user}</p>
+    <p>${user} in ${appEnv}</p>
 </body>
 </html>
