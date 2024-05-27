@@ -1,4 +1,4 @@
-package learn.api.config.web;
+package learn.admin.config.web;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRegistration;

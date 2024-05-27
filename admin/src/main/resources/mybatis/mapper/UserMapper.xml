@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="learn.api.user.domain.repository.UserMapper">
+<mapper namespace="learn.admin.user.domain.repository.UserMapper">
 
-  <select id="selectAll" resultType="learn.api.user.domain.model.User">
+  <select id="selectAll" resultType="learn.admin.user.domain.model.User">
     SELECT seq, name, age
     FROM user
   </select>

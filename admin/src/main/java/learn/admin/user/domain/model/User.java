@@ -1,4 +1,4 @@
-package learn.api.user.domain.model;
+package learn.admin.user.domain.model;
 
 import lombok.AccessLevel;
 import lombok.Getter;

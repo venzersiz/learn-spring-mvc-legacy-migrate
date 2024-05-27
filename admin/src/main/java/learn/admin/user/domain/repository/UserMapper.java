@@ -1,7 +1,7 @@
-package learn.api.user.domain.repository;
+package learn.admin.user.domain.repository;
 
 import java.util.List;
-import learn.api.user.domain.model.User;
+import learn.admin.user.domain.model.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
