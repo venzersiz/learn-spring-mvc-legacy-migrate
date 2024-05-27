@@ -8,19 +8,20 @@
   <version>0.1</version>
   <packaging>pom</packaging>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.22.RELEASE</version>
+  </parent>
+
   <modules>
     <module>util</module>
     <module>core</module>
-    <module>api</module>
+    <module>admin</module>
   </modules>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-
-    <spring.version>4.3.3.RELEASE</spring.version>
-    <slf4j.version>2.0.13</slf4j.version>
+    <java.version>1.8</java.version>
   </properties>
 
   <dependencies>
@@ -31,39 +32,4 @@
       <optional>true</optional>
     </dependency>
   </dependencies>
-
-  <profiles>
-    <profile>
-      <id>local</id>
-      <properties>
-        <app.env>local</app.env>
-      </properties>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-    </profile>
-    <profile>
-      <id>dev</id>
-      <properties>
-        <app.env>dev</app.env>
-      </properties>
-    </profile>
-    <profile>
-      <id>prod</id>
-      <properties>
-        <app.env>prod</app.env>
-      </properties>
-    </profile>
-  </profiles>
-
-  <build>
-    <resources>
-      <resource>
-        <directory>src/main/resources</directory>
-      </resource>
-      <resource>
-        <directory>src/main/resources-${app.env}</directory>
-      </resource>
-    </resources>
-  </build>
 </project>
