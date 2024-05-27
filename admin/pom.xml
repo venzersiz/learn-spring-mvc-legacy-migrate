@@ -43,8 +43,14 @@
       <artifactId>jstl</artifactId>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-jasper</artifactId>
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
 
+  <!-- 없으면 java -jar admin/target/admin-0.1.war 실행 시 '~에 기본 Manifest 속성이 없습니다.' 에러 발생 -->
   <build>
     <plugins>
       <plugin>
