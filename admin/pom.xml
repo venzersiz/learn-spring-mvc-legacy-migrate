@@ -25,12 +25,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
-    <!-- 외장 톰캣과 내장 톰캣이 충돌나지 않도록 함 -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-tomcat</artifactId>
-      <scope>provided</scope>
-    </dependency>
 
     <!-- ~ JSP -->
     <dependency>
