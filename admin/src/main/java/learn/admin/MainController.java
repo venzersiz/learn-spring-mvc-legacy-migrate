@@ -1,9 +1,9 @@
-package learn.api;
+package learn.admin;
 
 import java.util.List;
-import learn.api.user.domain.model.User;
-import learn.api.user.domain.repository.UserDao;
-import learn.api.user.domain.repository.UserMapper;
+import learn.admin.user.domain.model.User;
+import learn.admin.user.domain.repository.UserDao;
+import learn.admin.user.domain.repository.UserMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Controller;

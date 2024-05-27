@@ -1,4 +1,4 @@
-package learn.api.config.spring;
+package learn.admin.config.spring;
 
 import javax.sql.DataSource;
 import lombok.RequiredArgsConstructor;

@@ -1,11 +1,11 @@
-package learn.api.config.spring;
+package learn.admin.config.spring;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "learn.api", includeFilters = @Filter(org.springframework.stereotype.Controller.class))
-public class ServletAppConfig {
+@ComponentScan(basePackages = "learn.admin.user", excludeFilters = @Filter(org.springframework.stereotype.Controller.class))
+public class RootAppConfig {
 
 }
