@@ -1,4 +1,4 @@
-package learn.admin.config.spring;
+package learn.api.config.spring;
 
 import javax.sql.DataSource;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan("learn.admin.user")
+@MapperScan("learn.api.user")
 @RequiredArgsConstructor
 public class PersistenceConfig {
 
